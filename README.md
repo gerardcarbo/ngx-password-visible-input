@@ -1,27 +1,41 @@
 # NgxPasswordVisibleInput
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+Angular Material password visible input.
+Formly support.
 
-## Development server
+# Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+npm i ngx-password-visible-input
 
-## Code scaffolding
+# Usage
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+There are two operating modes:
 
-## Build
+* mousedown: the password is shown only when the view button is pressed (default).
+* toggle: the visibility of the password is toggled when the view button is pressed.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Button color can be controled by the color property ( 'primary' | 'accent' | 'warn' | '' ) and can be raised.
 
-## Running unit tests
+``` html
+    <ngx-password-visible-input [mode]="mode" [color]="color" [raised]="raised" >
+      <input type="password" placeholder="Insert password" [(ngModel)]="pwd" />
+    </ngx-password-visible-input>
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Formly support is avaible through FormlyFieldPasswordVisibleInputComponent. Must be installed in FormlyModule by the library user:
 
-## Running end-to-end tests
+``` javascript
+    FormlyModule.forRoot({
+      types: [
+        { name: 'visiblePassword', component: FormlyFieldPasswordVisibleInputComponent, wrappers: ['form-field'] }
+      ],
+    })
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Demo
 
-## Further help
+See <a href="https://gerardcarbo.github.io/ngx-password-visible-input/" target="_blank">https://gerardcarbo.github.io/ngx-password-visible-input/</a> 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# License
+
+<a href="/LICENSE">MIT</a>

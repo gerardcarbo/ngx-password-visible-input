@@ -17,6 +17,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
-  }
+    ],
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "ngx-password-visible-input-lib": [
+        "dist/ngx-password-visible-input-lib"
+      ],
+      "ngx-password-visible-input-lib/*": [
+        "dist/ngx-password-visible-input-lib/*"
+      ]
+    }
+  },
+  "exclude": ["dist"],
 }

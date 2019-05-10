@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "ngx-password-visible-input-lib": {
+      "root": "projects/ngx-password-visible-input-lib",
+      "sourceRoot": "projects/ngx-password-visible-input-lib/src",
+      "projectType": "library",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-password-visible-input-lib/tsconfig.lib.json",
+            "project": "projects/ngx-password-visible-input-lib/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-password-visible-input-lib/src/test.ts",
+            "tsConfig": "projects/ngx-password-visible-input-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-password-visible-input-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-password-visible-input-lib/tsconfig.lib.json",
+              "projects/ngx-password-visible-input-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-password-visible-input"

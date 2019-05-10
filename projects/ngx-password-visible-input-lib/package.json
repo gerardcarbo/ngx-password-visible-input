@@ -1,0 +1,18 @@
+{
+  "name": "ngx-password-visible-input",
+  "version": "0.1.1",
+  "peerDependencies": {
+    "@angular/common": ">=5 <=7",
+    "@angular/core": ">=5 <=7",
+    "@angular/forms": ">=5 <=7",
+    "@angular/material": ">=5 <=7"
+  },
+  "keywords": [
+    "ngx",
+    "angular2",
+    "visible password input",
+    "angular material",
+    "formly forms"
+  ],
+  "license": "MIT"
+}
