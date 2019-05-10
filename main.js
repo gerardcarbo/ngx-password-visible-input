@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
 
-/***/ "./dist/ngx-password-visible-input-lib/fesm5/ngx-password-visible-input-lib.js":
-/*!*************************************************************************************!*\
-  !*** ./dist/ngx-password-visible-input-lib/fesm5/ngx-password-visible-input-lib.js ***!
-  \*************************************************************************************/
+/***/ "./dist/ngx-password-visible-input-lib/fesm5/ngx-password-visible-input.js":
+/*!*********************************************************************************!*\
+  !*** ./dist/ngx-password-visible-input-lib/fesm5/ngx-password-visible-input.js ***!
+  \*********************************************************************************/
 /*! exports provided: FormlyFieldPasswordVisibleInputComponent, NgxPasswordVisibleInputLibModule, PasswordVisibleInputComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -224,7 +224,7 @@ var NgxPasswordVisibleInputLibModule = /** @class */ (function () {
  */
 
 
-//# sourceMappingURL=ngx-password-visible-input-lib.js.map
+//# sourceMappingURL=ngx-password-visible-input.js.map
 
 
 /***/ }),
@@ -236,7 +236,7 @@ var NgxPasswordVisibleInputLibModule = /** @class */ (function () {
 /*! exports provided: name, version, scripts, private, dependencies, devDependencies, default */
 /***/ (function(module) {
 
-module.exports = {"name":"ngx-password-visible-input","version":"0.1.0","scripts":{"ng":"ng","start":"ng serve","build":"ng build","build_lib":"ng build ngx-password-visible-input-lib","test":"ng test","lint":"ng lint","e2e":"ng e2e","npm_pack":"cp README.md dist/virtual-repeat-angular-lib && cd dist/virtual-repeat-angular-lib && npm pack && cp *.tgz ../releases/","npm_build_and_package":"npm run build_lib && npm run npm_pack","npm_publish":"npm publish dist/ngx-password-visible-input-lib/ngx-password-visible-input-0.1.0.tgz","ngh_publish":"npm run build_lib && ng build --base-href https://gerardcarbo.github.io/ngx-password-visible-input/ && ngh --dir dist/ngx-password-visible-input","git_push":"git push origin master"},"private":true,"dependencies":{"@angular/animations":"~7.2.0","@angular/cdk":"^7.3.7","@angular/common":"~7.2.0","@angular/compiler":"~7.2.0","@angular/core":"~7.2.0","@angular/forms":"~7.2.0","@angular/material":"^7.3.7","@angular/platform-browser":"~7.2.0","@angular/platform-browser-dynamic":"~7.2.0","@angular/router":"~7.2.0","@ngx-formly/core":"5.1.2","@ngx-formly/material":"5.1.2","core-js":"^2.5.4","rxjs":"~6.3.3","tslib":"^1.9.0","zone.js":"~0.8.26"},"devDependencies":{"@angular-devkit/build-angular":"~0.13.0","@angular-devkit/build-ng-packagr":"~0.13.0","@angular/cli":"~7.3.5","@angular/compiler-cli":"~7.2.0","@angular/language-service":"~7.2.0","@types/jasmine":"~2.8.8","@types/jasminewd2":"~2.0.3","@types/node":"^8.9.5","codelyzer":"~4.5.0","jasmine-core":"~2.99.1","jasmine-spec-reporter":"~4.2.1","karma":"~4.0.0","karma-chrome-launcher":"~2.2.0","karma-coverage-istanbul-reporter":"~2.0.1","karma-jasmine":"~1.1.2","karma-jasmine-html-reporter":"^0.2.2","ng-packagr":"^5.1.0","protractor":"~5.4.0","ts-node":"~7.0.0","tsickle":">=0.34.0","tslib":"^1.9.0","tslint":"~5.11.0","typescript":"~3.2.2"}};
+module.exports = {"name":"ngx-password-visible-input","version":"0.1.1","scripts":{"ng":"ng","start":"ng serve","build":"ng build","build_lib":"ng build ngx-password-visible-input-lib","test":"ng test","lint":"ng lint","e2e":"ng e2e","npm_pack":"cp README.md dist/ngx-password-visible-input-lib && cd dist/ngx-password-visible-input-lib && npm pack && cp *.tgz ../releases/","npm_build_and_package":"npm run build_lib && npm run npm_pack","npm_publish":"npm publish dist/ngx-password-visible-input-lib/ngx-password-visible-input-0.1.1.tgz","ngh_publish":"npm run build_lib && ng build --base-href https://gerardcarbo.github.io/ngx-password-visible-input/ && ngh --dir dist/ngx-password-visible-input","git_push":"git push origin master"},"private":true,"dependencies":{"@angular/animations":"~7.2.0","@angular/cdk":"^7.3.7","@angular/common":"~7.2.0","@angular/compiler":"~7.2.0","@angular/core":"~7.2.0","@angular/forms":"~7.2.0","@angular/material":"^7.3.7","@angular/platform-browser":"~7.2.0","@angular/platform-browser-dynamic":"~7.2.0","@angular/router":"~7.2.0","@ngx-formly/core":"5.1.2","@ngx-formly/material":"5.1.2","core-js":"^2.5.4","rxjs":"~6.3.3","tslib":"^1.9.0","zone.js":"~0.8.26"},"devDependencies":{"@angular-devkit/build-angular":"~0.13.0","@angular-devkit/build-ng-packagr":"~0.13.0","@angular/cli":"~7.3.5","@angular/compiler-cli":"~7.2.0","@angular/language-service":"~7.2.0","@types/jasmine":"~2.8.8","@types/jasminewd2":"~2.0.3","@types/node":"^8.9.5","codelyzer":"~4.5.0","jasmine-core":"~2.99.1","jasmine-spec-reporter":"~4.2.1","karma":"~4.0.0","karma-chrome-launcher":"~2.2.0","karma-coverage-istanbul-reporter":"~2.0.1","karma-jasmine":"~1.1.2","karma-jasmine-html-reporter":"^0.2.2","ng-packagr":"^5.1.0","protractor":"~5.4.0","ts-node":"~7.0.0","tsickle":">=0.34.0","tslib":"^1.9.0","tslint":"~5.11.0","typescript":"~3.2.2"}};
 
 /***/ }),
 
@@ -364,7 +364,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var ngx_password_visible_input_lib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-password-visible-input-lib */ "./dist/ngx-password-visible-input-lib/fesm5/ngx-password-visible-input-lib.js");
+/* harmony import */ var ngx_password_visible_input_lib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-password-visible-input-lib */ "./dist/ngx-password-visible-input-lib/fesm5/ngx-password-visible-input.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _material_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./material.module */ "./src/app/material.module.ts");
