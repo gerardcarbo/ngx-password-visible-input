@@ -13,7 +13,7 @@ export class FormlyFieldPasswordVisibleInputComponent extends FieldType {
   constructor() {
     super();
   }
-
+ 
   get type() {
     return this.to.type || 'text';
   }

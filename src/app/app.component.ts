@@ -15,7 +15,7 @@ export class AppComponent {
   mode = 'mousedown';
   color = 'primary';
   raised = true;
-  pwd = 'ThisIsAPassword!';
+  pwd = 'this-is-a-password';
 
   // formly data
   formlyForm = new FormGroup({});
