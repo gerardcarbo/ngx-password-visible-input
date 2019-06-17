@@ -304,7 +304,7 @@ var AppComponent = /** @class */ (function () {
         this.mode = 'mousedown';
         this.color = 'primary';
         this.raised = true;
-        this.pwd = 'ThisIsAPassword!';
+        this.pwd = 'this-is-a-password';
         // formly data
         this.formlyForm = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormGroup"]({});
         this.formlyFields = [
