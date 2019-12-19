@@ -206,7 +206,7 @@ module.exports = "<!--The content below is only a placeholder and can be replace
 /*! exports provided: name, version, scripts, private, dependencies, devDependencies, default */
 /***/ (function(module) {
 
-module.exports = {"name":"ngx-password-visible-input","version":"0.1.2","scripts":{"ng":"ng","start":"ng serve","build":"ng build","build_lib":"ng build ngx-password-visible-input-lib","test":"ng test","lint":"ng lint","e2e":"ng e2e","npm_pack":"cp README.md dist/ngx-password-visible-input-lib && cd dist/ngx-password-visible-input-lib && npm pack && cp *.tgz ../releases/","npm_build_and_package":"npm run build_lib && npm run npm_pack","npm_publish":"npm publish dist/ngx-password-visible-input-lib/ngx-password-visible-input-0.1.2.tgz","ngh_publish":"npm run build_lib && ng build --base-href https://gerardcarbo.github.io/ngx-password-visible-input/ && ngh --dir dist/ngx-password-visible-input","git_push":"git push origin master"},"private":true,"dependencies":{"@angular/animations":"~8.0.1","@angular/cdk":"^8.0.1","@angular/common":"~8.0.1","@angular/compiler":"~8.0.1","@angular/core":"~8.0.1","@angular/forms":"~8.0.1","@angular/material":"^8.0.1","@angular/platform-browser":"~8.0.1","@angular/platform-browser-dynamic":"~8.0.1","@angular/router":"~8.0.1","@ngx-formly/core":"5.1.9","@ngx-formly/material":"5.1.9","core-js":"^3.1.4","rxjs":"~6.5.2","tslib":"^1.10.0","zone.js":"~0.9.1"},"devDependencies":{"@angular-devkit/build-angular":"~0.800.0","@angular-devkit/build-ng-packagr":"~0.800.0","@angular/cli":"~8.0.3","@angular/compiler-cli":"~8.0.1","@angular/language-service":"~8.0.1","@types/jasmine":"~3.3.13","@types/jasminewd2":"~2.0.3","@types/node":"^12.0.8","codelyzer":"^5.0.1","jasmine-core":"~3.4.0","jasmine-spec-reporter":"~4.2.1","karma":"~4.1.0","karma-chrome-launcher":"~2.2.0","karma-coverage-istanbul-reporter":"~2.0.1","karma-jasmine":"~2.0.1","karma-jasmine-html-reporter":"^1.4.2","ng-packagr":"^5.1.0","protractor":"~5.4.0","ts-node":"~8.3.0","tsickle":"^0.35.0","tslint":"~5.17.0","typescript":"^3.4.5"}};
+module.exports = {"name":"ngx-password-visible-input","version":"0.1.3","scripts":{"ng":"ng","start":"ng serve","build":"ng build","build_lib":"ng build ngx-password-visible-input-lib","serve_build":"http-server ./dist/ngx-password-visible-input/ -p 4700 -o","test":"ng test","lint":"ng lint","e2e":"ng e2e","npm_pack":"cp README.md dist/ngx-password-visible-input-lib && cd dist/ngx-password-visible-input-lib && npm pack && cp *.tgz ../releases/","npm_build_and_package":"npm run build_lib && npm run npm_pack","npm_publish":"npm publish dist/ngx-password-visible-input-lib/ngx-password-visible-input-0.1.3.tgz","ngh_publish":"npm run build_lib && ng build --base-href https://gerardcarbo.github.io/ngx-password-visible-input/ && ngh --dir dist/ngx-password-visible-input","git_push":"git push origin master"},"private":true,"dependencies":{"@angular/animations":"~8.0.1","@angular/cdk":"^8.0.1","@angular/common":"~8.0.1","@angular/compiler":"~8.0.1","@angular/core":"~8.0.1","@angular/forms":"~8.0.1","@angular/material":"^8.0.1","@angular/platform-browser":"~8.0.1","@angular/platform-browser-dynamic":"~8.0.1","@angular/router":"~8.0.1","@ngx-formly/core":"5.1.9","@ngx-formly/material":"5.1.9","core-js":"^3.1.4","rxjs":"~6.5.2","tslib":"^1.10.0","zone.js":"~0.9.1"},"devDependencies":{"@angular-devkit/build-angular":"~0.800.0","@angular-devkit/build-ng-packagr":"~0.800.0","@angular/cli":"~8.0.3","@angular/compiler-cli":"~8.0.1","@angular/language-service":"~8.0.1","@types/jasmine":"~3.3.13","@types/jasminewd2":"~2.0.3","@types/node":"^12.0.8","codelyzer":"^5.0.1","jasmine-core":"~3.4.0","jasmine-spec-reporter":"~4.2.1","karma":"~4.1.0","karma-chrome-launcher":"~2.2.0","karma-coverage-istanbul-reporter":"~2.0.1","karma-jasmine":"~2.0.1","karma-jasmine-html-reporter":"^1.4.2","ng-packagr":"^5.1.0","protractor":"~5.4.0","ts-node":"~8.3.0","tsickle":"^0.35.0","tslint":"~5.17.0","typescript":"^3.4.5"}};
 
 /***/ }),
 
@@ -294,6 +294,15 @@ let AppComponent = class AppComponent {
             user: '',
             password: ''
         };
+    }
+    save() {
+        if (!this.formlyForm.valid) {
+            alert('Some data is not valid');
+            console.log('invalid form. errors: ', this.formlyForm.errors);
+        }
+        else {
+            alert('Ok!');
+        }
     }
 };
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
